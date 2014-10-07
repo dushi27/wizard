@@ -1,1 +1,13 @@
-social
+<%= form_for @user, url: wizard_path do |f| %>
+  <div class="field">
+    <%= f.label :twitter %><br>
+    <%= f.text_field :twitter %>
+  </div>
+  <div class="field">
+    <%= f.label :linkedin %><br>
+    <%= f.text_field :linkedin %>
+  </div>
+ <div class="actions">
+    <%= f.submit "Finish" %>
+  </div>
+<%end%>
