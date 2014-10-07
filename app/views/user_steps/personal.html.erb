@@ -8,6 +8,8 @@
     <%= f.text_field :school %>
   </div>
   <div class="actions">
-    <%= f.submit "Continue" %>
+    <%= f.submit "Continue" %>   
   </div>
 <%end%>
+<%= link_to 'Prev', previous_wizard_path %>
+<%= link_to 'Next', next_wizard_path %>
